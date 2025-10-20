@@ -9,7 +9,9 @@ import {
     print,
     traverse,
     iterator,
-    evaluate
+    evaluate,
+    type Location,
+    type LocationRange
 } from "@humanwhocodes/momoa";
 
 parse("foo");
@@ -54,3 +56,6 @@ for (const { node, phase, parent } of iter) {
 }
 
 evaluate(ast);
+
+({}) as Location satisfies {line: number, column: number, offset: number};
+({}) as LocationRange satisfies {start: Location, end: Location};

@@ -8,6 +8,7 @@
 //-----------------------------------------------------------------------------
 
 /** @typedef {import("./typedefs.js").Location} Location */
+/** @typedef {import("./typedefs.js").LocationRange} LocationRange */
 /** @typedef {import("./typedefs.js").NodeParts} NodeParts */
 /** @typedef {import("./typedefs.js").DocumentNode} DocumentNode */
 /** @typedef {import("./typedefs.js").StringNode} StringNode */
